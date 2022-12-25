@@ -10,14 +10,14 @@ import classes from './Home.module.css';
 const Home = () => {
     const dispatch = useDispatch();
     useEffect(()=> {
-    // console.log(getAll();)
+    // call getAll Api 
     dispatch(getAllBooks());
     },[dispatch]);
 
     const books = useSelector( (store: RootState) => {
         return store.booksList.list;
     });
-    console.log(books);
+    
     return (
         <div>
            {/* home Page content */}
@@ -37,7 +37,7 @@ const Home = () => {
             <Link to='/search'>Add a book</Link>
           </div>
         </div>
-           {/* Home page content */}
+           {/*End Home page content */}
         </div>
     )
 };

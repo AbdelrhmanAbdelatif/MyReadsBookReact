@@ -47,4 +47,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 
 
-- creat react app ` npx create-react-app my-reads-book --template typescript`
+- Creat react app with type script  ` npx create-react-app my-reads-book --template typescript`
+- Package  `react-dom react-redux toolkit react-router-dom `
+- Unit Test ` jest jest-dom `

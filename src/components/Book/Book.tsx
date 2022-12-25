@@ -9,9 +9,7 @@ const Book = (props: {book: InterfaceBook}) => {
    const dispatch = useDispatch();
 
     const changeHandeler = (e: any) => {
-        console.log(e.target.value);
         dispatch(updateShelfAllBooks(props.book, e.target.value));
-    
         }
 
     return (
@@ -51,11 +49,4 @@ const Book = (props: {book: InterfaceBook}) => {
 }
 
 export default Book;
-
-// function getUpdateAllBooks(value: any, arg1: number): any {
-//     throw new Error("Function not implemented.");
-// }
-// function dispatch(arg0: any) {
-//     throw new Error("Function not implemented.");
-// }
 
